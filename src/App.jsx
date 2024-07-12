@@ -7,6 +7,7 @@ import Main from '../pages/Main'
 import Navbar from '../components/Navbar'
 import Welcome from '../pages/Welcome'
 import SignUp from '../pages/SignUp'
+import NotFound from '../pages/NotFound'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path={'/contact'} element={<Contact />}/>
         <Route path={'/welcome/:firstName/:lastName'} element={<Welcome />}/>
         <Route path={'/signup'} element={<SignUp />}/>
+        <Route path={'*'} element={<NotFound />}/>
       </Routes>
     </>
   )
